@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying an Author Archive page
+ * The template for displaying Author Archive page
  *
  * Used to display archive-type pages for posts by an author.
  *
