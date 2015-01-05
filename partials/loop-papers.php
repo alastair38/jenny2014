@@ -7,7 +7,7 @@ $cat_name = $cats[0]->slug;
 
 	<header class="article-header">
 	<div class="resource-date <?php echo $cat_name;?>">
-	<?php  echo '<span id="caticon2"><i class="fi-page-edit"></i></span>';?>
+	<?php  echo '<span id="caticon2">Published </span>';?>
 	<?php echo get_field( 'year_of_publication'); ?>
 	</div>
      
@@ -43,7 +43,15 @@ $cat_name = $cats[0]->slug;
     echo "</p>";    
     }
     ?>	
-    
+ <?php 
+
+    if (is_category() ) {
+        
+    }
+   else { echo "Published in: "; 
+         the_category();
+        }
+?>
 	</section> <!-- end article section -->
 
 

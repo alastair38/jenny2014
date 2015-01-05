@@ -158,6 +158,7 @@ HOME PAGE THEME BOXES / GENERAL GRID PADDING
   padding: 0; }
 
 .articles-videos {
+  box-shadow: 0px 1px 2px 0px #999;
   background: #fff;
   margin-bottom: 1em; }
 
@@ -193,6 +194,9 @@ CAROUSEL AND SLIDER STYLING
   margin: 0;
   height: 350px; }
 
+.home .rslides {
+  margin: 0 0 0 -15px; }
+
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
@@ -212,9 +216,6 @@ CAROUSEL AND SLIDER STYLING
   float: left;
   width: 100%;
   border: 0; }
-
-.kebo-tweets.rslides {
-  height: 150px; }
 
 .slider {
   font-size: .8em;
@@ -245,6 +246,25 @@ CAROUSEL AND SLIDER STYLING
 
 .owl-pagination {
   padding-bottom: 20px; }
+
+/*********************
+TWITTER WIDGET
+*********************/
+#kebo_twitter_feed_widget-2 {
+  background: #fff; }
+
+.widget {
+  position: relative; }
+
+.kebo-tweets.rslides {
+  height: auto; }
+
+.widget h6 {
+  color: #fff;
+  text-transform: uppercase;
+  background: #414141;
+  text-align: center;
+  margin: 1em 0; }
 
 /*********************
 MENU / SITE HEADER
@@ -291,6 +311,24 @@ nav li {
 
 .top-bar {
   height: 30px; }
+
+.top-bar-section-main {
+  background: #464646; }
+
+ul#menu-contact {
+  height: 1.85em; }
+
+ul#menu-contact li {
+  display: inline-block;
+  padding: 0 1em;
+  font-family: '';
+  font-size: 1em;
+  width: auto; }
+  ul#menu-contact li a {
+    color: #fff; }
+
+.current-menu-item {
+  text-decoration: underline; }
 
 .large-12.columns h1 a {
   color: #464646;
@@ -432,6 +470,7 @@ article.large-6 {
 
 article.large-12.columns.videos {
   background: #fff;
+  box-shadow: 0px 1px 2px 0px #999;
   height: 300px;
   margin-bottom: 20px; }
 
@@ -469,6 +508,9 @@ iframe {
 /********************
 THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
 ********************/
+.cat-excerpt h6 {
+  font-size: 1.35em;
+  color: #000; }
 .cat-excerpt a {
   position: absolute;
   width: 100%;
@@ -491,14 +533,43 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
 .cat-excerpt.hopeful-places a {
   border-bottom: 4px solid #efbf4a; }
 
-.large-6.columns.enabling-places {
+.blog-excerpt {
+  position: relative;
+  background: #fff;
+  color: #464646;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 5px;
+  margin-bottom: 1em;
+  text-align: left;
+  height: 175px;
+  transition: .3s background; }
+  .blog-excerpt h6 {
+    text-transform: uppercase; }
+  .blog-excerpt img {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: -5px;
+    right: -5px; }
+
+.blog-excerpt.enabling-places {
   border-bottom: 4px solid #998f76; }
-.large-6.columns.green-health {
+.blog-excerpt.green-health {
   border-bottom: 4px solid #67893f; }
-.large-6.columns.blue-health {
+.blog-excerpt.blue-health {
   border-bottom: 4px solid #7a8490; }
-.large-6.columns.hopeful-places {
+.blog-excerpt.hopeful-places {
   border-bottom: 4px solid #efbf4a; }
+
+.blog-date {
+  font-size: 1em;
+  padding: 1em 0; }
+
+.post-categories {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0px; }
 
 .cat-slider-image {
   position: relative; }

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Resources Search Page
+Template Name: Posts Search Page
 */
 ?>
 
@@ -9,16 +9,15 @@ Template Name: Resources Search Page
 <?php
 
 $args = array();
-$args['wp_query'] = array('post_type' => 'resources',
+$args['wp_query'] = array('post_type' => 'post',
                           'posts_per_page' => 10,
-                          'meta_key'		=> 'year_of_publication',
-	'orderby'		=> array( 'meta_value' => 'DESC', 'date' => 'DESC' ),
-	'order'			=> 'DESC'
+	                      'orderby'		=> array( 'date' => 'DESC' ),
+	                      'order'			=> 'DESC'
                           
                           );
 
 $args['fields'][] = array('type' => 'taxonomy',
-                          'label' => 'Category',
+                          'label' => 'By Category',
                           'taxonomy' => 'category',
                           'format' => 'checkbox',
                           'values' => array('blue-health' => 'Blue Health', 'enabling-places' => 'Enabling Places', 'green-health' => 'Green Health', 'hopeful-places' => 'Hopeful Places')
@@ -26,7 +25,7 @@ $args['fields'][] = array('type' => 'taxonomy',
 $args['fields'][] = array('type' => 'search',
                           'placeholder' => 'Search titles for keywords',
                           'title' => 'Search',
-                          'label' => 'Title Keywords',
+                          'label' => 'By Title Keywords',
                           'value' => '');
 $args['fields'][] = array('type' => 'submit',
                           'value' => 'Filter');
@@ -52,12 +51,12 @@ $my_search = new WP_Advanced_Search($args);
 $my_search = new WP_Advanced_Search($args);
 $temp_query = $wp_query;
 $wp_query = $my_search->query();?>
-<h4 class="archive-title"><span><?php echo 'Publications' ;?></span></h4>
+<h4 class="archive-title"><span><?php echo 'Blog Posts' ;?></span></h4>
 <?php	
 if ( have_posts() ): 
     while ( have_posts() ): the_post(); ?>
     
-<?php get_template_part( 'partials/loop', 'papers' ); ?>					
+<?php get_template_part( 'partials/loop', 'posts' ); ?>					
  
 <?php    endwhile;
 

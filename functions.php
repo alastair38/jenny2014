@@ -145,7 +145,7 @@ function joints_register_sidebars() {
 		'id' => 'sidebar1',
 		'name' => __('Sidebar 1', 'jointstheme'),
 		'description' => __('The first (primary) sidebar.', 'jointstheme'),
-		'before_widget' => '<div id="%1$s" class="widget large-12 medium-12 columns">',
+		'before_widget' => '<div id="%1$s" class="widget large-12 medium-12 columns"><h6>Twitter Updates</h6>',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',

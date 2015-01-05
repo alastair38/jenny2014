@@ -12,8 +12,11 @@
 					<a href="#"><span>Menu</span></a>
 				</li>
 			</ul>
+			<section class="top-bar-section-main">
+			<?php joints_footer_links(); ?>
+            </section>
 			<section class="top-bar-section">
-				<?php joints_main_nav(); ?>
+				
 			</section>
 		</nav>
 	</div>
@@ -55,7 +58,7 @@
 <a href="mailto:<?php the_author_meta( 'user_email', 1 ); ?>" target="_blank"><i class="fi-mail" title="Email"></i></a>
 <a href="<?php the_author_meta( 'twitter_profile', 1 ); ?>" target="_blank"><i class="fi-social-twitter" title="Follow Me On Twitter"></i></a> 
 <a href="<?php the_author_meta( 'vimeo_profile', 1 ); ?>" target="_blank"><i class="fi-social-vimeo" title="Follow Me On Vimeo"></i></a>    
-<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Search' ) ) ); ?>" rel="nofollow" title="Search all content"><i class="fi-magnifying-glass" title="Search all content"></i></a></span>  
+
 </div>
 
 <div id="biog" class="large-12 columns show-for-medium-up">

@@ -248,6 +248,7 @@ HOME PAGE THEME BOXES / GENERAL GRID PADDING
 }
 
 .articles-videos {
+    box-shadow: $main-boxshadow;
     background: $main-contentbox;
     margin-bottom: 1em;
 }
@@ -291,6 +292,10 @@ CAROUSEL AND SLIDER STYLING
   height: 350px;
   }
 
+.home .rslides {
+ margin: 0 0 0 -15px;
+}
+
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
@@ -313,10 +318,6 @@ CAROUSEL AND SLIDER STYLING
   width: 100%;
   border: 0;
   }
-
-.kebo-tweets.rslides {
-    height: 150px;
-}
 
 .slider {
     font-size: .8em;
@@ -355,6 +356,31 @@ CAROUSEL AND SLIDER STYLING
 
 .owl-pagination {
     padding-bottom: 20px;
+}
+
+
+/*********************
+TWITTER WIDGET
+*********************/
+
+#kebo_twitter_feed_widget-2 {
+    background: #fff; 
+}
+
+.widget {
+    position: relative;
+}
+
+.kebo-tweets.rslides {
+    height: auto;
+}
+
+.widget h6 {
+    color: #fff;
+    text-transform: uppercase;
+    background: #414141;
+    text-align: center;
+    margin: 1em 0;
 }
 
 /*********************
@@ -418,6 +444,29 @@ nav {
 .top-bar {
     height: 30px;
     }
+
+.top-bar-section-main {
+    background: #464646;
+}
+
+ul#menu-contact {
+    height: 1.85em;
+}
+
+ul#menu-contact li {
+    display: inline-block; 
+    padding: 0 1em; 
+    font-family: ''; 
+    font-size: 1em; 
+    width: auto;
+    a {
+        color: #fff;
+    }
+}
+
+.current-menu-item {
+    text-decoration: underline;
+}
 
 .large-12.columns h1 a {
     color: $content-text;
@@ -600,6 +649,7 @@ article.large-6 {
 article.large-12 {
     &.columns.videos {
     background: $main-contentbox;
+    box-shadow: $main-boxshadow;
     height: 300px;
     margin-bottom: 20px;
     }
@@ -651,7 +701,12 @@ iframe {
 THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
 ********************/
 
-.cat-excerpt a {
+.cat-excerpt {
+    & h6 {
+    font-size: 1.35em;
+    color: #000;
+    }
+    & a {
     position: absolute;
     width: 100%;
     top: 250px;
@@ -663,6 +718,7 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
     text-align: left;
     height: 100px;
     transition: .3s background;
+    }
 }
 
 .cat-excerpt {
@@ -680,8 +736,30 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
     }
 }
 
+.blog-excerpt {
+    position: relative;
+    background: $main-contentbox;
+    color: $content-text;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 5px;
+    margin-bottom: 1em;
+    text-align: left;
+    height: 175px;
+    transition: .3s background;
+    & h6 {
+    text-transform: uppercase;
+    }
+    & img {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: -5px;
+    right: -5px;
+    }
+}
 
-.large-6.columns {
+.blog-excerpt {
     &.enabling-places {
     border-bottom: 4px solid $theme1;
     }
@@ -695,6 +773,32 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
     border-bottom: 4px solid $theme4;
     }
 }
+
+.blog-date {
+    font-size: 1em;
+    padding: 1em 0;
+}
+
+.post-categories {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+
+
+.large-6.columns {
+    &.enabling-places {
+    }
+    &.green-health {
+    }
+    &.blue-health {
+    }
+    &.hopeful-places {
+    }
+}
+
+
 
 .cat-slider-image {
     position: relative;
@@ -1254,6 +1358,7 @@ img.attachment-full.wp-post-image {
 .home .rslides_container {
     padding: 1em 0em;
 }
+
 .articles-videos article,
 article.large-12.columns.videos {
     box-shadow: $main-boxshadow;
