@@ -503,6 +503,10 @@ h4{
     }
 }
 
+.category strong {
+    background: $content-bg;
+}
+
 /*********************
 POST / RELATED CONTENT
 *********************/
@@ -609,22 +613,11 @@ img.attachment-full.wp-post-image {
 }
 
 /********************
-CATEGORY PAGE TITLE FIXED TO PAGE FOOT
+ABOUT PAGE TITLE REMOVED
 ********************/
 
-h1 {
-    &.enabling-places, 
-    &.green-health, 
-    &.blue-health, 
-    &.hopeful-places {
-    position:fixed;
-    bottom: -15px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    font-size: 1em;
-    color: $themetext;
-    }
+.page-template-default #main h1 {
+    display: none;
 }
 
 /********************
