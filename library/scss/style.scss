@@ -363,11 +363,8 @@ CAROUSEL AND SLIDER STYLING
 TWITTER WIDGET
 *********************/
 
-#kebo_twitter_feed_widget-2 {
-    background: #fff; 
-}
-
 .widget {
+    background: #fff;
     position: relative;
 }
 
@@ -503,7 +500,7 @@ h4{
     }
 }
 
-.category strong {
+.category p strong:first-of-type {
     background: $content-bg;
 }
 
@@ -1337,7 +1334,7 @@ SMALL
 
 .rslides {
     margin-bottom: 1em;
-}    
+}
 
 .cat-excerpt a {
     font-size: .65em;
@@ -1350,6 +1347,10 @@ img.attachment-full.wp-post-image {
 }
 .home .rslides_container {
     padding: 1em 0em;
+}
+
+.home .rslides {
+ margin: 0px;
 }
 
 .articles-videos article,

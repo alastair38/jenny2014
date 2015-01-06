@@ -39,9 +39,7 @@
 <aside class="left-off-canvas-menu show-for-small-only">
 	<ul class="off-canvas-list">
 		<li><label>MENU</label></li>
-			<?php joints_main_nav(); ?>
-			<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'About' ) ) ); ?>" rel="nofollow" title="About Jenny">About</a></li>
-			<li><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Search' ) ) ); ?>"><i class="fi-magnifying-glass" title="Search"></i> Search</a></li>
+			<?php joints_footer_links(); ?>
 			<li><a href="mailto:<?php the_author_meta( 'user_email', 1 ); ?>" target="_blank"><i class="fi-mail" title="Email"></i> Email</a></li>
 <li><a href="<?php the_author_meta( 'twitter_profile', 1 ); ?>" target="_blank"><i class="fi-social-twitter" title="Follow Me On Twitter"></i> Twitter</a></li> 
 <li><a href="<?php the_author_meta( 'vimeo_profile', 1 ); ?>" target="_blank"><i class="fi-social-vimeo" title="Follow Me On Vimeo"></i> Vimeo</a></li>
