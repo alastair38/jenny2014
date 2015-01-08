@@ -12,9 +12,9 @@ Template Name: Front Page Layout
 
         <div class="large-12 medium-12 columns" role="main">
             
-            <div style="" class="large-5 medium-5 small-12 columns">
+            <div class="large-5 medium-5 small-12 columns">
 
-                <div style="" class="latest">
+                <div class="latest">
                        
                     <div class="caption-title">
                        
@@ -36,7 +36,7 @@ Template Name: Front Page Layout
                     
                 </div>
 
-            <div style="background:;" class="rslides_container large-7 medium-7 columns">
+            <div class="rslides_container large-7 medium-7 columns">
 
                 <ul id="slides1" class="rslides">
               
@@ -64,11 +64,11 @@ Template Name: Front Page Layout
            
             </div>
             
-            <div style="background:;" class="large-3 medium-6 columns">
+            <div class="large-3 medium-6 columns">
                 
                 <div class="content-themes">
                 
-                    <div style="background:white; border-bottom:solid 4px #998f76;">
+                    <div id="e-places">
                         
                         <?php
                         // Get the ID of a given category
@@ -92,11 +92,11 @@ Template Name: Front Page Layout
                 
             </div>
                
-            <div style="background:;" class="large-3 medium-6 columns">
+            <div class="large-3 medium-6 columns">
                 
                 <div class="content-themes">
                 
-                    <div style="background:white; border-bottom:solid 4px #7a8490;">
+                    <div id="b-health">
                         
                         <?php
                         // Get the ID of a given category
@@ -120,11 +120,11 @@ Template Name: Front Page Layout
             
             </div>
                
-            <div style="background:;" class="large-3 medium-6 columns">
+            <div class="ct large-3 medium-6 columns">
                 
                 <div class="content-themes">
                 
-                    <div style="background:white; border-bottom:solid 4px #67893f;">
+                    <div id="g-health">
                         
                         <?php
                         // Get the ID of a given category
@@ -148,11 +148,11 @@ Template Name: Front Page Layout
                 
             </div>
             
-            <div style="background:;" class="large-3 medium-6 columns">
+            <div class="large-3 medium-6 columns">
                 
                 <div class="content-themes">
                 
-                    <div style="background: white; border-bottom:solid 4px #efbf4a;">
+                    <div id="h-places">
                         
                         <?php
                         // Get the ID of a given category
@@ -176,9 +176,9 @@ Template Name: Front Page Layout
                 
             </div>
 
-            <div style="background:;" class="large-6 medium-6 columns">
+            <div class="large-6 medium-6 columns">
                 
-                <div style="background: white;" class="test">    
+                <div class="press">    
                     
                     <header class="article-header">
      
@@ -210,9 +210,9 @@ Template Name: Front Page Layout
                 
             </div>
 
-            <div style="background:;" class="large-6 medium-6 columns">
+            <div class="large-6 medium-6 columns">
 
-               <div style="background: white;" class="test">
+               <div class="press">
                    
                    	<header class="article-header">
      
@@ -244,9 +244,9 @@ Template Name: Front Page Layout
            
             </div>
 
-            <div style="background:;" class="show-for-medium-up">
+            <divclass="show-for-medium-up">
             
-                <div style="background:white;" class="twitter"><?php get_sidebar(); ?></div>
+                <div class="twitter"><?php get_sidebar(); ?></div>
             
             </div>
    				

@@ -29,6 +29,91 @@ Content Background Style /
 #main {
   background: #fff; }
 
+/*********************
+New Homepage Layout /
+*********************/
+.rslides_container.large-7.medium-7.columns {
+  height: 350px;
+  margin-bottom: 1.5em; }
+
+.latest {
+  height: 350px;
+  position: relative;
+  margin-bottom: 1.5em; }
+  .latest img {
+    position: absolute;
+    top: 0;
+    height: 350px; }
+
+.content-themes {
+  margin-bottom: 1.5em; }
+
+.content-themes h4,
+.press-title h5 {
+  font-family: "Open Sans Condensed";
+  text-transform: uppercase;
+  padding: 0px 5px;
+  letter-spacing: 1px; }
+
+.caption-title {
+  z-index: 10;
+  position: absolute;
+  background: #fff;
+  padding: 0 5px; }
+  .caption-title h5 {
+    font-family: "Open Sans Condensed";
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.caption h6 {
+  background: white;
+  font-family: "Open Sans Condensed";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0; }
+
+.press {
+  background: #fff;
+  height: 350px;
+  font-family: "Open Sans Condensed"; }
+  .press h5 {
+    font-family: "Open Sans Condensed";
+    text-transform: uppercase; }
+  .press iframe {
+    width: 100%; }
+
+.caption span {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: .5em;
+  padding: 0 5px;
+  letter-spacing: 1px; }
+.caption p {
+  font-size: 1em;
+  margin-bottom: 0;
+  padding: 0 5px; }
+
+#e-places {
+  border-bottom: 4px solid #998f76;
+  background: #fff; }
+
+#b-health {
+  border-bottom: 4px solid #7a8490;
+  background: #fff; }
+
+#g-health {
+  border-bottom: 4px solid #67893f;
+  background: #fff; }
+
+#h-places {
+  border-bottom: 4px solid #efbf4a;
+  background: #fff; }
+
+.twitter {
+  background: #fff; }
+
 /*****************************************
 Header Font Icon Styles / Share Links
 *****************************************/
@@ -88,7 +173,7 @@ Box Shadows
   padding: 1em; }
 
 .large-3.medium-6.columns {
-  box-shadow: 0px 1px 2px 0px #999; }
+  box-shadow: 0px 0px 0px white; }
 
 /*********************
 HOME PAGE THEME BOXES / GENERAL GRID PADDING
