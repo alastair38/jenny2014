@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Press Articles Page
+*/
 ?>
 
 <?php get_header(); ?>
@@ -6,7 +9,7 @@
 <?php
 
 $args = array();
-$args['wp_query'] = array('post_type' => 'post',
+$args['wp_query'] = array('post_type' => 'articles',
                           'posts_per_page' => 10,
 	                      'orderby'		=> array( 'date' => 'DESC' ),
 	                      'order'			=> 'DESC'
@@ -48,12 +51,12 @@ $my_search = new WP_Advanced_Search($args);
 $my_search = new WP_Advanced_Search($args);
 $temp_query = $wp_query;
 $wp_query = $my_search->query();?>
-<h4 class="archive-title"><span>Looks like you've visited an old link!!</h4>
+<h4 class="archive-title"><span><?php echo 'Press Articles' ;?></span></h4>
 <?php	
 if ( have_posts() ): 
     while ( have_posts() ): the_post(); ?>
     
-<?php get_template_part( 'partials/loop', 'posts' ); ?>					
+<?php get_template_part( 'partials/loop', 'press' ); ?>					
  
 <?php    endwhile;
 

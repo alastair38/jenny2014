@@ -126,8 +126,6 @@ $query = new WP_Query( $args );
 
     <?php endif; ?>
     
-      <h5><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Resources Search' ) ) ); ?>"> View All Papers</a> </h5>
-    
 <?php wp_reset_postdata();?>
 
 </div>

@@ -47,13 +47,14 @@ $query = new WP_Query( $args );
               </div>
             </div>
 
-<div class="articles-videos large-12 medium-12 small-12 columns">
+
+<!-- div class="articles-videos large-12 medium-12 small-12 columns" -->
 
 <?php
        
     $args = array(
         'post_type' => 'articles',
-        'category_name' => 'green-health'
+        'category_name' => 'uncategorized'
     );
     
 $query = new WP_Query( $args );
@@ -69,7 +70,8 @@ $query = new WP_Query( $args );
     
 <?php wp_reset_postdata();?>
 
-</div>
+<!-- /div -->
+
 
 <div class="large-12 medium-12 small-12 columns">
 
@@ -122,8 +124,6 @@ $query = new WP_Query( $args );
     <?php endwhile; else: ?>
 
     <?php endif; ?>
-    
-    <h5><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Resources Search' ) ) ); ?>"> View All Papers</a> </h5>
     
 <?php wp_reset_postdata();?>
 

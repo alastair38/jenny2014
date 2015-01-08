@@ -103,22 +103,22 @@ HOME PAGE THEME BOXES / GENERAL GRID PADDING
 .hopeful-places.columns {
   height: 175px; }
 
-.green-health.large-2 {
+.green-health.small-6 {
   position: relative;
   background: url("http://localhost/possib.ly/wp-content/uploads/2014/08/botanics_2.jpg");
   background-size: cover; }
 
-.blue-health.large-2 {
+.blue-health.small-6 {
   position: relative;
   background: url("http://localhost/possib.ly/wp-content/uploads/2012/08/sheffield-1024x592.jpg");
   background-size: cover; }
 
-.enabling-places.large-2 {
+.enabling-places.small-6 {
   position: relative;
   background: url("http://localhost/possib.ly/wp-content/uploads/2012/08/edinburgh-leith-links-1024x552.jpg");
   background-size: cover; }
 
-.hopeful-places.large-2 {
+.hopeful-places.small-6 {
   position: relative;
   background: url("http://localhost/possib.ly/wp-content/uploads/2012/08/copenhagen-city-market-1024x585.jpg");
   background-size: cover; }
@@ -244,9 +244,6 @@ CAROUSEL AND SLIDER STYLING
 .slider-image {
   position: relative; }
 
-.owl-pagination {
-  padding-bottom: 20px; }
-
 /*********************
 TWITTER WIDGET
 *********************/
@@ -311,7 +308,8 @@ nav li {
   height: 30px; }
 
 .top-bar-section-main {
-  background: #464646; }
+  background: #464646;
+  border-bottom: 4px solid #efbf4a; }
 
 ul#menu-contact {
   height: 1.85em; }
@@ -564,7 +562,7 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
 .post-categories {
   display: inline-block;
   list-style-type: none;
-  margin-left: 0px; }
+  margin-left: 0; }
 
 .cat-slider-image {
   position: relative; }
@@ -1083,8 +1081,11 @@ SMALL
   #biog {
     margin-top: 3em; }
 
+  .blog-excerpt {
+    height: 250px; }
+
   .title img {
-    padding: 0 5px 5px 0; }
+    padding: 0px 5px 5px 0px; }
 
   .rslides, .rslides img {
     height: 250px; }
@@ -1107,14 +1108,32 @@ SMALL
   .home .rslides {
     margin: 0px; }
 
-  .articles-videos article,
-  article.large-12.columns.videos {
+  #themes {
+    padding: 0; }
+
+  .articles-videos {
+    box-shadow: none; }
+
+  .category article {
     box-shadow: 0px 1px 2px 0px #999;
     margin-bottom: 1em; } }
 /*
 MEDIUM
 */
 @media only screen and (min-width: 40.063em) {
+  .home .rslides {
+    margin: 0 0 1em 0; }
+
+  .articles-videos article.large-6.columns {
+    height: auto;
+    padding-bottom: 2em; }
+
+  .tab-bar-section {
+    text-align: center; }
+
+  .title img {
+    padding: 0px 5px 5px 0px; }
+
   /******************************************************************
 
   Stylesheet: Nediun Stylesheet

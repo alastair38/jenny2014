@@ -1,4 +1,4 @@
-<div class="large-12 columns show-for-medium-up">
+<div class="large-12 columns show-for-large-only">
 	<div class="fixed">
 
 		<!-- If you want to use the more traditional "fixed" navigation.
@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-<div class="large-12 columns show-for-small-only">
+<div class="large-12 columns hide-for-large-only">
 	<div class="contain-to-grid fixed">
 		<nav class="tab-bar">
 			<section class="middle tab-bar-section">
@@ -36,7 +36,7 @@
 </div>
 
 
-<aside class="left-off-canvas-menu show-for-small-only">
+<aside class="left-off-canvas-menu hide-for-large-only">
 	<ul class="off-canvas-list">
 		<li><label>MENU</label></li>
 			<?php joints_footer_links(); ?>
@@ -50,7 +50,7 @@
 <a class="exit-off-canvas"></a>
 
 
-<div class="large-12 columns show-for-medium-up">
+<div class="large-12 columns show-for-large-only">
 <h1 id="site-title"><a href="<?php echo home_url(); ?>" title="Return to home page" rel="nofollow"> <?php echo get_avatar( 1, '75' ); ?> <?php bloginfo('name'); ?></a></h1>
 <span class="social-icons ">
 <a href="mailto:<?php the_author_meta( 'user_email', 1 ); ?>" target="_blank"><i class="fi-mail" title="Email"></i></a>
@@ -59,7 +59,7 @@
 
 </div>
 
-<div id="biog" class="large-12 columns show-for-medium-up">
+<div id="biog" class="large-12 columns show-for-large-only">
 <?php the_author_meta( 'work_title', 1 ); ?> <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'About' ) ) ); ?>" rel="nofollow" title="About Jenny">&raquo;</a>
 </div>
 
