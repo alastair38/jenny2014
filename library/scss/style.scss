@@ -153,9 +153,18 @@ New Homepage Layout /
     text-transform: uppercase;
     }
     & iframe {
-    width: 100%;
+    width: 80%;
+    margin: 10px 10%;
     }
-    
+}
+
+h5, h4, h6 {
+    margin-bottom: 0px; 
+    margin-top: 0px;
+}
+
+.caption-press {
+    padding: 5px;    
 }
 
 .caption { 
@@ -192,6 +201,11 @@ New Homepage Layout /
 }
 .twitter {
     background: $main-contentbox;
+}
+
+.rtw_follow.follow-button {
+padding-bottom: 1em;
+margin-top: -2em;
 }
 /*****************************************
 Header Font Icon Styles / Share Links
@@ -239,7 +253,6 @@ span.social-icons {
 h6 {
     position: relative;
 }
-
 
 
 #caticon i {
@@ -544,6 +557,9 @@ nav {
 .top-bar-section-main {
     background: #464646;
     border-bottom: 4px solid #efbf4a;
+    & a {
+        font-family: $main-font, "Arial Narrow", sans-serif;
+    }
 }
 
 ul#menu-contact {
@@ -1422,6 +1438,8 @@ SMALL
 
 #biog {
     margin-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .blog-excerpt {
@@ -1439,6 +1457,21 @@ SMALL
 
 .rslides {
     margin-bottom: 1em;
+}
+    
+.rslides_container.large-7.medium-7.columns {
+    height: auto; 
+    margin-bottom: .5em;
+}
+    
+iframe {
+    width: 100%;
+}
+    
+.press {
+    height: auto;
+    margin-bottom: 1.5em;
+    padding-bottom: 5px;
 }
 
 .cat-excerpt a {
@@ -1488,6 +1521,12 @@ MEDIUM
 }
 .title img {
     padding: 0px 5px 5px 0px;
+}
+
+#biog {
+    margin-top: 3em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
   /******************************************************************
@@ -1551,6 +1590,11 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
 @media only screen and (min-width: 64.063em) {
+    #biog {
+    margin-top: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
   /******************************************************************
 
   Stylesheet: Large Stylesheet

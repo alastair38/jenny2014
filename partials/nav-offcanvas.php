@@ -59,9 +59,6 @@
 
 </div>
 
-<div id="biog" class="large-12 columns show-for-large-only">
+<div id="biog" class="large-12 columns ">
 <?php the_author_meta( 'work_title', 1 ); ?> <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'About' ) ) ); ?>" rel="nofollow" title="About Jenny">&raquo;</a>
-</div>
-
-
 </div>
