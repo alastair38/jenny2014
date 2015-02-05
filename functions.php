@@ -29,6 +29,7 @@ include_once('acf/acf.php' );
 
 require_once('library/custom-post-type.php'); // you can disable this if you like
 require_once('wp-advanced-search/wpas.php'); // adds WPAS files for building out advanced search
+
 /*
 library/admin.php
 	- removing some default WordPress dashboard widgets
@@ -243,18 +244,6 @@ function add_to_author_profile( $contactmethods ) {
 	return $contactmethods;
 }
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
-
-
-/*-----------------------------------------------------------------------------------*/
-/* Re-writes author slug to profile for more appropriate URL
-/*-----------------------------------------------------------------------------------*/
-
-add_action('init', 'cng_author_base');
-function cng_author_base() {
-    global $wp_rewrite;
-    $author_slug = 'profile'; // change slug name
-    $wp_rewrite->author_base = $author_slug;
-}
 
 /**
  *	Add TinyMCE editor to the "Biographical Info" field in a user profile

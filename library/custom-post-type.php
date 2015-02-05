@@ -146,6 +146,183 @@ function roe_resources() {
 	add_action( 'init', 'roe_resources');
 
 
+// custom fields
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_article-quote',
+		'title' => 'Article Quote',
+		'fields' => array (
+			array (
+				'key' => 'field_54871e92a659c',
+				'label' => 'Quotation',
+				'name' => 'quotation',
+				'type' => 'textarea',
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => 4,
+				'formatting' => 'none',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_external-link',
+		'title' => 'External Link',
+		'fields' => array (
+			array (
+				'key' => 'field_538f78387de9a',
+				'label' => 'Link',
+				'name' => 'link',
+				'type' => 'text',
+				'instructions' => 'Copy and paste any relevant external link here (eg: url of original article, Vimeo video or paper abstracts)',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_53904c1bdefc0',
+				'label' => 'Source',
+				'name' => 'source',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '!=',
+					'value' => 'post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'acf_after_title',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_resource-details',
+		'title' => 'Resource Details',
+		'fields' => array (
+			array (
+				'key' => 'field_538f790417db8',
+				'label' => 'Year of Publication',
+				'name' => 'year_of_publication',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_538f792517db9',
+				'label' => 'Journal/Publisher',
+				'name' => 'publisher',
+				'type' => 'text',
+				'instructions' => 'Name of journal/book publisher',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_538f79cf5c221',
+				'label' => 'Volume',
+				'name' => 'volume',
+				'type' => 'text',
+				'instructions' => 'Enter journal volume details (if any)',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_538f7a0a5c222',
+				'label' => 'Page Range',
+				'name' => 'page_range',
+				'type' => 'text',
+				'instructions' => 'Enter journal/book page range (if any)',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => 'pp.',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_538f78938599a',
+				'label' => 'Reference',
+				'name' => 'reference',
+				'type' => 'text',
+				'instructions' => 'For example, a DOI reference',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'resources',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'acf_after_title',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
 
 
 	

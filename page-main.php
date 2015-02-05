@@ -19,7 +19,7 @@ Template Name: Main Home Page
 <?php
        
     $args = array(
-	'post__in'  => get_option( 'sticky_posts' )
+	'posts_per_page' => 8
     );
     
 $query = new WP_Query( $args );
