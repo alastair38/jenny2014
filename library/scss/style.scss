@@ -216,6 +216,10 @@ Header Font Icon Styles / Share Links
     margin-bottom: 20px;
 }
 
+#uncategorized.share-wrapper {
+    background: #414141;
+}
+
 .share-wrapper {
     margin-bottom: 1em;
 }
@@ -630,7 +634,7 @@ POST / RELATED CONTENT
     margin: 0px 10px 0px 0px;   
 }
 
-.post-thumbnail-caption {
+.post-thumbnail-caption, .wp-caption-text {
     font-family: $main-font;
     background: $content-text;
     color: $main-contentbox;
@@ -840,6 +844,9 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
     &.hopeful-places a {
     border-bottom: 4px solid $theme4;
     }
+    &.uncategorized a {
+    border-bottom: 4px solid #414141;
+    }
 }
 
 .blog-excerpt {
@@ -877,6 +884,9 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
     }
     &.hopeful-places {
     border-bottom: 4px solid $theme4;
+    }
+    &.uncategorized {
+    border-bottom: 4px solid #414141;
     }
 }
 
@@ -1157,7 +1167,6 @@ article {
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
-  background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
   .wp-caption img {

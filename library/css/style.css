@@ -133,6 +133,9 @@ Header Font Icon Styles / Share Links
   background: transparent;
   margin-bottom: 20px; }
 
+#uncategorized.share-wrapper {
+  background: #414141; }
+
 .share-wrapper {
   margin-bottom: 1em; }
 
@@ -462,7 +465,7 @@ POST / RELATED CONTENT
   float: left;
   margin: 0px 10px 0px 0px; }
 
-.post-thumbnail-caption {
+.post-thumbnail-caption, .wp-caption-text {
   font-family: "Open Sans Condensed";
   background: #464646;
   color: #fff;
@@ -624,6 +627,8 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
   border-bottom: 4px solid #7a8490; }
 .cat-excerpt.hopeful-places a {
   border-bottom: 4px solid #efbf4a; }
+.cat-excerpt.uncategorized a {
+  border-bottom: 4px solid #414141; }
 
 .blog-excerpt {
   position: relative;
@@ -653,6 +658,8 @@ THEME COLOUR VARIABLES INC. CAROUSEL, FP AND CAT PAGES
   border-bottom: 4px solid #7a8490; }
 .blog-excerpt.hopeful-places {
   border-bottom: 4px solid #efbf4a; }
+.blog-excerpt.uncategorized {
+  border-bottom: 4px solid #414141; }
 
 .blog-date {
   font-size: 1em;
@@ -885,7 +892,6 @@ article#enabling-places, article#green-health, article#blue-health, article#hope
 /* end .entry-content */
 .wp-caption {
   max-width: 100%;
-  background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
 
