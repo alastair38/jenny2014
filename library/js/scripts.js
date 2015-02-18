@@ -119,7 +119,10 @@ jQuery(document).ready(function($) {
 
 jQuery(function() {
     jQuery(".rslides").responsiveSlides({
+        auto: true,
         pause: true,
-        speed: 2000
+        pager: true,
+        namespace: "centered-btns",
+        timeout: 8000
     });
   });

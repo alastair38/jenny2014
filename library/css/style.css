@@ -324,6 +324,34 @@ CAROUSEL AND SLIDER STYLING
 .slider-image {
   position: relative; }
 
+.centered-btns_tabs {
+  margin-top: 0px;
+  text-align: center; }
+
+.centered-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px; }
+
+.centered-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #666;
+  display: inline-block;
+  _display: block;
+  *display: block;
+  width: 9px;
+  height: 9px;
+  margin: 3px; }
+
+.centered-btns_here a {
+  background: #efbf4a; }
+
 /*********************
 TWITTER WIDGET
 *********************/
