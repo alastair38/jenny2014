@@ -352,6 +352,9 @@ CAROUSEL AND SLIDER STYLING
 .centered-btns_here a {
   background: #efbf4a; }
 
+.category .centered-btns_tabs {
+  display: none; }
+
 /*********************
 TWITTER WIDGET
 *********************/
