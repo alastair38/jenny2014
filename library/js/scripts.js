@@ -118,5 +118,8 @@ jQuery(document).ready(function($) {
  */
 
 jQuery(function() {
-    jQuery(".rslides").responsiveSlides();
+    jQuery(".rslides").responsiveSlides({
+        pause: true,
+        speed: 2000
+    });
   });
