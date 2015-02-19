@@ -40,9 +40,9 @@
   
 <span class="share-links">
    
-    <a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=jennyroe&text=<?php the_title(); ?>" title="Share on Twitter" target="_blank"><i class="fi-social-twitter"></i></a>
+    <a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=jennyjroe&text=<?php the_title(); ?>" title="Share on Twitter" target="_blank"><i class="fi-social-twitter"></i></a>
    
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&summary=<?php echo wp_filter_nohtml_kses( $content );?>&source=www.jennyroe.com" title="Share on Linkedin" target="_blank"><i class="fi-social-linkedin"></i></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&summary=<?php echo wp_filter_nohtml_kses( $content );?>&source=www.jennyjroe.com" title="Share on Linkedin" target="_blank"><i class="fi-social-linkedin"></i></a>
 
 	<a href="mailto:?subject=I wanted to share this post with you from <?php bloginfo('name'); ?>&body=<?php the_title('','',true); ?>&#32;&#32;<?php the_permalink(); ?>" title="Email to a friend/colleague" target="_blank"><i class="fi-mail"></i></a> 
 	

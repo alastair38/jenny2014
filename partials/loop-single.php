@@ -22,8 +22,6 @@
 		}
 		?>
 
-	<a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>&summary=<?php echo wp_filter_nohtml_kses( $content );?>&source=www.memoryfriendly.org.uk"><i class="fi-social-linkedin"></i></a>	
-
 	</section> <!-- end article section -->
 
 	<footer class="article-footer">
