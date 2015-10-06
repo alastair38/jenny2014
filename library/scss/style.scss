@@ -508,6 +508,13 @@ TWITTER WIDGET
     margin: 1em 0;
 }
 
+#content .rotatingtweets,
+#content .norotatingtweets  {
+	border-top: 0px solid #DDD !important;
+	border-bottom: 0px solid #DDD !important;
+	margin-bottom: 3%;
+}
+
 /*********************
 MENU / SITE HEADER
 *********************/
@@ -1083,7 +1090,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-  
+
+
 .header #inner-header li {
     list-style: none; }
 
@@ -1635,6 +1643,12 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+
+#inner-header {
+    margin-top: 2em;
+}
+
+
   /*********************
   NAVIGATION STYLES
   *********************/

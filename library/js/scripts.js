@@ -123,6 +123,6 @@ jQuery(function() {
         pause: true,
         pager: true,
         namespace: "centered-btns",
-        timeout: 8000
+        timeout: 4000
     });
   });
